@@ -1,15 +1,11 @@
-const typeDefs = `
-  type Item {
-    _id: ID
-    name: String
-    image: String
-    cost: Int
-    calories: Int
-  }
+const { Item } = require('../models');
 
-  type Query {
-    items: [Item]!
-  }
-`;
+const resolvers = {
+    Query: {
+        items: async () => {
+            return Item.find();
+        }
+    }
+};
 
-module.exports = typeDefs;
+module.exports = resolvers;
