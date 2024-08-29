@@ -33,7 +33,7 @@ Backend
         cost
         calories
 7. Create schema: typeDefs & resolvers
-    query: itmes
+    query: items
 8. Add seed data
     create cleanDB.js file to empty the database
     create items.json file
