@@ -7,7 +7,7 @@ const itemSchema = new Schema(
       required: true,
       trim: true
     },
-    image: {
+    img: {
       type: String,
     },
     cost: {
@@ -20,6 +20,6 @@ const itemSchema = new Schema(
   }
 );
 
-const Class = model('Item', itemSchema);
+const Item = model('Item', itemSchema);
 
-module.exports = Class;
+module.exports = Item;
